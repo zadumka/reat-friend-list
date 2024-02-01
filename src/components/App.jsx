@@ -1,6 +1,6 @@
 import user from '../user.json';
 import data from '../data.json';
-import transactions from '../transactions';
+
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 
@@ -17,8 +17,6 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics stats={data}>Upload stats</Statistics>
-
-      <TransactionHistory items={transactions} />
     </div>
   );
 };
